@@ -1,10 +1,10 @@
 <html>
 
 <head>
-    <title>Form Input Matakuliah</title>
+    <title>Form Input Matakuliah</title><br><br><br><br><br><br><br><br><br><br><br>
 </head>
 
-<body>
+<body style = "background-color:green";>
     <center>
         <form action="<?= base_url('matakuliah/cetak');?>" method="post">
             <table>

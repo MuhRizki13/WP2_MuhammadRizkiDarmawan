@@ -2,10 +2,10 @@
  
 <head> 
 
-    <title>Tampil Data Matakuliah</title> 
+    <title>Tampil Data Matakuliah</title><br><br><br><br><br><br><br><br><br><br><br>
 </head> 
  
-<body> 
+<body style = "background-color:green";> 
     <center> 
         <table> 
             <tr> 
@@ -20,20 +20,20 @@
             </tr> 
             <tr> 
                 <th>Kode MTK</th> 
-                <th>:</th> 
+                <td>:</td> 
                 <td> 
                     <?= $kode; ?> 
                 </td> 
             </tr> 
             <tr> 
-                <td>Nama MTK</td> 
+                <th>Nama MTK</th> 
                 <td>:</td> 
                 <td> 
                     <?= $nama; ?> 
                 </td> 
             </tr> 
             <tr> 
-                <td>SKS</td> 
+                <th>SKS</th> 
                 <td>:</td> 
                 <td> 
                     <?= $sks; ?> 

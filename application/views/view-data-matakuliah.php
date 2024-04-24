@@ -2,10 +2,10 @@
  
 <head> 
 
-    <title>Tampil Data Matakuliah</title><br><br><br><br><br><br><br><br><br><br><br>
+    <title>Tampil Data Matakuliah</title>
 </head> 
  
-<body style = "background-color:green";> 
+<body> 
     <center> 
         <table> 
             <tr> 

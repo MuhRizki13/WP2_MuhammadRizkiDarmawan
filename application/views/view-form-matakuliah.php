@@ -1,10 +1,10 @@
 <html>
 
 <head>
-    <title>Form Input Matakuliah</title><br><br><br><br><br><br><br><br><br><br><br>
+    <title>Form Input Matakuliah</title>
 </head>
 
-<body style = "background-color:green";>
+<body>
     <center>
         <form action="<?= base_url('matakuliah/cetak');?>" method="post">
             <table>
@@ -22,14 +22,20 @@
                     <th>Kode MTK</th>
                     <th>:</th>
                     <td>
-                        <input type="text" name="kode" id="kode">
+                        <input type="text" name="kode" id="kode" 
+                        class="<?= form_error('kode') ? 'invalid' : '' ?>"
+                            placeholder="isikan data" value="<?= set_value('kode') ?>" />
+                        <div clas="invalid-feedback"><?= form_error('kode') ?></div>
                     </td>
                 </tr>
                 <tr>
                     <th>Nama MTK</th>
                     <td>:</td>
                     <td>
-                        <input type="text" name="nama" id="nama">
+                        <input type="text" name="nama" id="nama"
+                        class="<?= form_error('nama') ? 'invalid' : '' ?>"
+                            placeholder="isikan data" value="<?= set_value('nama') ?>" />
+                        <div clas="invalid-feedback"><?= form_error('nama') ?></div>
                     </td>
                 </tr>
                 <tr>
@@ -42,6 +48,7 @@
                             <option value="3">3</option>
                             <option value="4">4</option>
                         </select>
+                        <div clas="invalid-feedback"><?= form_error('sks') ?></div>
                     </td>
                 </tr>
                 <tr>
